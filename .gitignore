@@ -1,0 +1,14 @@
+# Java
+.classpath
+.project
+.settings
+dependency-reduced-pom.xml
+
+# Misc
+.vscode
+*.pid
+*.cfg
+*.db
+logs/
+target/
+test_gcp/
