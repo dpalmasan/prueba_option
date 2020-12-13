@@ -12,3 +12,4 @@ dependency-reduced-pom.xml
 logs/
 target/
 test_gcp/
+__pycache__
