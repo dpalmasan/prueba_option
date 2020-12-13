@@ -10,12 +10,13 @@ Correr job dataflow directamente ejecutando el `JAR`
 
 ```
 java -jar target/prueba-tecnica-1.jar \
-  --runner=DataFlowRunner \
-  --project=diego-palma \
-  --tempLocation=gs://prueba-option/temp/
+    --project=diego-palma \
+    --gcpTempLocation=gs://diego-palma/tmp/ \
+    --jobName=dataflow-vuelos \
+    --region=us-central1
 ```
 
-Dentro de la carpeta `src` está todo el código en `Java` usando el SDK Beam para crear el pipeline. Se tomó un enfoque simple, como se muestra en el documento adjunto al correo.
+Dentro de la carpeta `src` está todo el código en `Java` usando el SDK Beam para crear el pipeline. Se tomó un enfoque simple, como se muestra en el documento adjunto al correo. En la carpeta `test` hay tests unitarios.
 
 ### Orquestación de ETL con airflow (composer)
 
